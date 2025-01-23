@@ -3,8 +3,8 @@ from algosdk.transaction import KeyregTxn
 from algosdk.mnemonic import to_private_key
 from algosdk.account import address_from_private_key
 
-algod_token = '' #Insert token, empty if nodely
-algod_server = '' #Insert server, eg; nodely
+algod_token = '' #Insert token, leave empty if using nodely
+algod_server = '' #Insert server, eg; nodely @ 'https://mainnet-api.4160.nodely.dev'
 algod_client = AlgodClient(algod_token, algod_server)
 
 status = algod_client.status()
