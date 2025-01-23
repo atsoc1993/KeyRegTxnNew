@@ -9,7 +9,7 @@ algod_client = AlgodClient(algod_token, algod_server)
 
 status = algod_client.status()
 
-mnemonic = '' #Insert mnemonic
+mnemonic = '' #Insert mnemonic, eg; 'word1 word2 word3 etc'
 pk = to_private_key(mnemonic)
 address = address_from_private_key(pk)
 
